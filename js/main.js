@@ -14,6 +14,8 @@ $(function()
 
     $("#navbar-top ul>li").click(activate_navbar_item);
     $("#days").text(get_days());
+
+    skills.setup();
 });
 
 function activate_navbar_item(e)

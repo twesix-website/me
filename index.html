@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/block.css">
-
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <script src="lib/chart.js/Chart.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/common.css">
+
+    <script src="js/skills.js"></script>
     <script src="js/main.js"></script>
 
-    <title>孟政元的个人信息</title>
+    <title>孟政元的个人信息 | twesix.cn</title>
 </head>
 <body style="visibility: hidden">
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-inverse" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-top">
@@ -23,7 +24,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand"><b class="text-black">我是孟政元</b></a>
+            <a href="#" class="navbar-brand"><b>我是孟政元</b></a>
         </div>
         <div class="navbar-collapse collapse" id="navbar-top">
             <ul class="nav navbar-nav">
@@ -43,7 +44,7 @@
 </nav>
 <div class="container">
     <div class="row" data-correspond-with="navbar" id="basic">
-        <div class="col-sm-8 col-sm-offset-2 block">
+        <div class="col-sm-8 col-sm-offset-2">
             <h3>基本信息</h3>
             <hr>
             <table class="table">
@@ -66,348 +67,72 @@
         </div>
     </div>
     <div class="row" data-correspond-with="navbar" id="look">
-        <div class="col-sm-8 col-sm-offset-2 block">
+        <div class="col-sm-8 col-sm-offset-2">
             <h3>长啥样</h3>
             <hr>
             <p>帅的不敢出门</p>
         </div>
-        <div class="col-sm-8 col-sm-offset-2 block">
+        <div class="col-sm-8 col-sm-offset-2">
             <h3>长啥样</h3>
             <hr>
             <p>帅的不敢出门</p>
         </div>
     </div>
     <div class="row" data-correspond-with="navbar" id="where_from">
-        <div class="col-sm-8 col-sm-offset-2 block">
+        <div class="col-sm-8 col-sm-offset-2">
             <h3>1996-8-28（阴历）</h3>
             <hr>
             <h4>降临到这个世界。</h4>
         </div>
-        <div class="col-sm-8 col-sm-offset-2 block">
+        <div class="col-sm-8 col-sm-offset-2">
             <h3>1996-1999（存储体尚未就绪）</h3>
             <hr>
             <h4>记不清了。</h4>
         </div>
-        <div class="col-sm-8 col-sm-offset-2 block">
+        <div class="col-sm-8 col-sm-offset-2">
             <h3>2000-2002（幼儿园）</h3>
             <hr>
             <h4>在老家上幼儿园，现在那里是镇上的中心幼儿园，成绩优异，聪明伶俐。</h4>
         </div>
-        <div class="col-sm-8 col-sm-offset-2 block">
+        <div class="col-sm-8 col-sm-offset-2">
             <h3>2002-2008（四新小学）</h3>
             <hr>
             <h4>在老家的四新小学上小学，成绩优异，聪明伶俐，爱耍小聪明，活泼好玩。</h4>
         </div>
-        <div class="col-sm-8 col-sm-offset-2 block">
+        <div class="col-sm-8 col-sm-offset-2">
             <h3>2008-2011（朱集镇一中）</h3>
             <hr>
             <h4>在老家的朱集镇一中上初中，成绩优异，但开始便得沉默寡言，喜欢安静，多愁善感。</h4>
         </div>
-        <div class="col-sm-8 col-sm-offset-2 block">
+        <div class="col-sm-8 col-sm-offset-2">
             <h3>2011-2014（襄阳五中）</h3>
             <hr>
             <h4>在湖北襄阳的襄阳五中上高中，成绩中等偏上，喜欢运动，爱与人交流，人缘好。</h4>
             <h4>高一的时候在26班，高二高三在18班（班主任是黄应忠，这位老师人很好，我很喜欢），高考成绩597分（一本线527分）。</h4>
         </div>
-        <div class="col-sm-8 col-sm-offset-2 block">
+        <div class="col-sm-8 col-sm-offset-2">
             <h3>2014-现在（吉林大学）</h3>
             <hr>
             <h4>在吉大计算机学院学习，整天喜欢折腾编程和其他的技术，对学习和考试的兴趣远不如从前，成绩一般。</h4>
         </div>
     </div>
     <div class="row" data-correspond-with="navbar" id="what_done">
-        <div class="col-sm-8 col-sm-offset-2 block">
+        <div class="col-sm-8 col-sm-offset-2">
             <h3>主要成就</h3>
             <hr>
             <a href="https://github.com/yoyo-team" target="_blank"><h4>吉林大学2016届大创国家级项目负责人</h4></a>
         </div>
     </div>
     <div class="row" data-correspond-with="navbar" id="what_can">
-        <div class="col-sm-6 block">
-            <h3>编程语言</h3>
-            <hr>
-            <table class="table">
-                <tr>
-                    <th>方向</th>
-                    <th>能力等级（1-10）</th>
-                </tr>
-                <tr>
-                    <td>ECMAScript</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>C</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>C++</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>PHP</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Java</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Python</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Ruby</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Go</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>C#</td>
-                    <td>1</td>
-                </tr>
-            </table>
+        <div class="col-sm-3">
+            <ul class="list-group" id="skills_nav"></ul>
         </div>
-        <div class="col-sm-6 block">
-            <h3>前端</h3>
-            <hr>
-            <table class="table">
-                <tr>
-                    <th>方向</th>
-                    <th>能力等级（1-10）</th>
-                </tr>
-                <tr>
-                    <td>HTML</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>JS</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>Ajax</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>HTTP协议</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Jquery</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Vue</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Angular</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>Bootstrap</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>Jasmine</td>
-                    <td>4</td>
-                </tr>
-            </table>
-        </div>
-        <div class="clearfix"></div>
-        <div class="col-sm-6 block">
-            <h3>跨平台</h3>
-            <hr>
-            <table class="table">
-                <tr>
-                    <th>方向</th>
-                    <th>能力等级（1-10）</th>
-                </tr>
-                <tr>
-                    <td>Weex</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Cordova | Phonegap</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Ionic</td>
-                    <td>3</td>
-                </tr>
-            </table>
-        </div>
-        <div class="col-sm-6 block">
-            <h3>开发平台</h3>
-            <hr>
-            <table class="table">
-                <tr>
-                    <th>方向</th>
-                    <th>能力等级（1-10）</th>
-                </tr>
-                <tr>
-                    <td>PC端Web</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>移动端Web</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>IOS</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Android</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Windows</td>
-                    <td>2</td>
-                </tr>
-            </table>
-        </div>
-        <div class="clearfix"></div>
-        <div class="col-sm-6 block">
-            <h3>服务器端</h3>
-            <hr>
-            <table class="table">
-                <tr>
-                    <th>方向</th>
-                    <th>能力等级（1-10）</th>
-                </tr>
-                <tr>
-                    <td>Linux</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>FTP</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>apache</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>nginx | tengine</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>shell</td>
-                    <td>2</td>
-                </tr>
-            </table>
-        </div>
-        <div class="col-sm-6 block">
-            <h3>Node.js</h3>
-            <hr>
-            <table class="table">
-                <tr>
-                    <th>方向</th>
-                    <th>能力等级（1-10）</th>
-                </tr>
-                <tr>
-                    <td>ES6</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>API</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Express</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>gulp</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>webpack</td>
-                    <td>4</td>
-                </tr>
-            </table>
-        </div>
-        <div class="clearfix"></div>
-        <div class="col-sm-6 block">
-            <h3>数据库</h3>
-            <hr>
-            <table class="table">
-                <tr>
-                    <th>方向</th>
-                    <th>能力等级（1-10）</th>
-                </tr>
-                <tr>
-                    <td>SQL数据库</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>MongoDB</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Redis</td>
-                    <td>3</td>
-                </tr>
-            </table>
-        </div>
-        <div class="col-sm-6 block">
-            <h3>开发工具</h3>
-            <hr>
-            <table class="table">
-                <tr>
-                    <th>方向</th>
-                    <th>能力等级（1-10）</th>
-                </tr>
-                <tr>
-                    <td>Git</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>GitHub</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <td>IntelliJ平台</td>
-                    <td>6</td>
-                </tr>
-            </table>
-        </div>
-        <div class="clearfix"></div>
-        <div class="col-sm-6 block">
-            <h3>网站建设</h3>
-            <hr>
-            <table class="table">
-                <tr>
-                    <th>方向</th>
-                    <th>能力等级（1-10）</th>
-                </tr>
-                <tr>
-                    <td>域名</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <td>DNS</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>WordPress</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>Hexo</td>
-                    <td>4</td>
-                </tr>
-            </table>
+        <div class="col-sm-9" id="skills_chart">
+            <canvas id="skills_canvas"></canvas>
         </div>
     </div>
     <div class="row" data-correspond-with="navbar" id="what_like">
-        <div class="col-sm-8 col-sm-offset-2 block">
+        <div class="col-sm-8 col-sm-offset-2">
             <h3>这货就喜欢下面这些</h3>
             <hr>
             <h4>编程爱好者，喜欢通过编程解决问题，爱好数学的美，但是很反感当下的数学教育。</h4>
@@ -429,7 +154,7 @@
         </div>
     </div>
     <div class="row" data-correspond-with="navbar" id="contact">
-        <div class="col-sm-8 col-sm-offset-2 block">
+        <div class="col-sm-8 col-sm-offset-2">
             <h3>单身可撩</h3>
             <hr>
             <table class="table">
