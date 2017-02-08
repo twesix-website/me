@@ -21,10 +21,9 @@ skills.list=
                 "Ajax":6,
                 "HTTP":5,
                 "Jquery":5,
-                "Vue":5,
-                "Angular":4,
-                "Bootstrap":7,
-                "Jasmine":4
+                // "Vue":5,
+                // "Angular":4,
+                // "Bootstrap":7
             },
         'Node.js':
             {

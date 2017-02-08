@@ -41,3 +41,22 @@ function get_days()
     date.setSeconds(0);
     return parseInt((new Date().getTime()-date.getTime())/(1000*3600*24));
 }
+function show_done_copy_qq()
+{
+
+}
+function copy_qq()
+{
+    var range=document.createRange();
+    range.selectNode(document.getElementById('qq_num'));
+    window.getSelection().addRange(range);
+    if(document.execCommand('copy'))
+    {
+        alert('QQ : 278227739 已拷贝');
+    }
+    else
+    {
+        alert('拷贝失败');
+    }
+    window.getSelection().removeAllRanges();
+}
